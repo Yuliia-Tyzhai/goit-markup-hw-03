@@ -13,13 +13,49 @@ a {
 ul,
 ol {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ==============HEADER STYLES============== */
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  column-gap: 40px;
+}
 
 .page-logo {
   color: #4d5ae5;
@@ -29,18 +65,22 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-part {
   color: #2e2f42;
 }
 
-.nav-link {
+.menu-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -57,6 +97,9 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .address-link:hover,
@@ -64,10 +107,22 @@ button {
   color: #404bbf;
 }
 
+.address-list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+}
 /* ==============HERO STYLES============== */
 
 .hero {
   background-color: #2e2f42;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-title {
